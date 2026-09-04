@@ -90,7 +90,7 @@ function changeCardQty(id,delta){
 }
 function addSelectedQuantity(id){
  const g=Number(document.getElementById(`weight-${id}`).value||500), q=Number(document.getElementById(`cardqty-${id}`).textContent||1);
- addProductWeight(id,g,q); openCart();
+ addProductWeight(id,g,q);
 }
 
 function renderCart(){
