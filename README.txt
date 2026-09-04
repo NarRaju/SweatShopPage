@@ -1,7 +1,4 @@
-VARAHEY SWEET - CART WEBSITE (NO NPM)
-
-Open index.html directly in Chrome, or use VS Code Live Server if available.
-No Node.js, npm, React, or admin permission is required.
+VARAHEY SWEET - CART WEBSITE
 
 FEATURES
 - Product photos instead of emoji/cube placeholders
