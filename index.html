@@ -65,7 +65,7 @@ function addToCart(id){
  const g=Number(select?.value || 500);
  const key=variantKey(id,g);
  cart[key]=(cart[key]||0)+1;
- save(); renderCart(); openCart();
+ save(); renderCart();
 }
 function addProductWeight(id,g,qty=1){
  const key=variantKey(id,g); cart[key]=(cart[key]||0)+qty; if(cart[key]<=0) delete cart[key]; save(); renderCart();
