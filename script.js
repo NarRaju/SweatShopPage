@@ -21,7 +21,7 @@ let cart = JSON.parse(localStorage.getItem('varaheyCart') || '{}');
 function money(n){ return '₹' + n.toLocaleString('en-IN'); }
 function save(){ localStorage.setItem('varaheyCart', JSON.stringify(cart)); }
 function getProduct(id){ return PRODUCTS.find(p=>p.id===id); }
-function addToCart(id, qty=1){ cart[id]=(cart[id]||0)+qty; save(); renderCart(); openCart(); }
+function addToCart(id, qty=1){ cart[id]=(cart[id]||0)+qty; save(); renderCart(); }
 function changeQty(id, delta){ cart[id]=(cart[id]||0)+delta; if(cart[id]<=0) delete cart[id]; save(); renderCart(); }
 function renderProducts(){
  const grid=document.getElementById('productGrid');
